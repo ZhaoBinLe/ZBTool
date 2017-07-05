@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8108231C1E66B45B00FF3C0F /* ZBRegexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108231B1E66B45B00FF3C0F /* ZBRegexTool.m */; };
+		810E42D51E6E4C2C000126EC /* ZBPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E42D41E6E4C2C000126EC /* ZBPathTool.m */; };
+		813C35E41F0C83D700391935 /* ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C35DF1F0C83D700391935 /* ImageTool.m */; };
+		813C35E51F0C83D700391935 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C35E11F0C83D700391935 /* UIView+Addition.m */; };
+		813C35E61F0C83D700391935 /* ZBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C35E31F0C83D700391935 /* ZBTextView.m */; };
+		81592F4F1EFD158D00754082 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 81592F4E1EFD158D00754082 /* UIButton+touch.m */; };
+		81592F521EFD176D00754082 /* UITableView+CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81592F511EFD176D00754082 /* UITableView+CellAnimation.m */; };
+		81C8C0F41E6514F600C64227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F31E6514F600C64227 /* main.m */; };
+		81C8C0F71E6514F600C64227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F61E6514F600C64227 /* AppDelegate.m */; };
+		81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F91E6514F600C64227 /* ViewController.m */; };
+		81C8C0FD1E6514F600C64227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C8C0FB1E6514F600C64227 /* Main.storyboard */; };
+		81C8C0FF1E6514F600C64227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C8C0FE1E6514F600C64227 /* Assets.xcassets */; };
+		81C8C1021E6514F600C64227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C8C1001E6514F600C64227 /* LaunchScreen.storyboard */; };
+		81C8C10D1E6519D100C64227 /* ZBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C10C1E6519D100C64227 /* ZBLoadingView.m */; };
+		81C8C10F1E651BE200C64227 /* LoadingAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81C8C10E1E651BE200C64227 /* LoadingAnimation.gif */; };
+		81C8C1151E65321200C64227 /* ZBDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C1141E65321200C64227 /* ZBDeviceTool.m */; };
+		81C8C1181E6555DA00C64227 /* ZBMathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C1171E6555DA00C64227 /* ZBMathTool.m */; };
+		81C8C11B1E65620500C64227 /* ZBUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C11A1E65620500C64227 /* ZBUITool.m */; };
+		EAA71031A9770F991C270DBD /* libPods-ZBTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C789278736E4C07DC976901 /* libPods-ZBTool.a */; settings = {ATTRIBUTES = (Required, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		035B4086E7BCF6F94865263D /* Pods-ZBTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBTool/Pods-ZBTool.release.xcconfig"; sourceTree = "<group>"; };
+		6C789278736E4C07DC976901 /* libPods-ZBTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8108231A1E66B45B00FF3C0F /* ZBRegexTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBRegexTool.h; sourceTree = "<group>"; };
+		8108231B1E66B45B00FF3C0F /* ZBRegexTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBRegexTool.m; sourceTree = "<group>"; };
+		810E42D21E6E49BC000126EC /* PulicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulicDefine.h; sourceTree = "<group>"; };
+		810E42D31E6E4C2C000126EC /* ZBPathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBPathTool.h; sourceTree = "<group>"; };
+		810E42D41E6E4C2C000126EC /* ZBPathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBPathTool.m; sourceTree = "<group>"; };
+		813C35DE1F0C83D700391935 /* ImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTool.h; sourceTree = "<group>"; };
+		813C35DF1F0C83D700391935 /* ImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTool.m; sourceTree = "<group>"; };
+		813C35E01F0C83D700391935 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		813C35E11F0C83D700391935 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		813C35E21F0C83D700391935 /* ZBTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTextView.h; sourceTree = "<group>"; };
+		813C35E31F0C83D700391935 /* ZBTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTextView.m; sourceTree = "<group>"; };
+		81592F4D1EFD158D00754082 /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
+		81592F4E1EFD158D00754082 /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
+		81592F501EFD176D00754082 /* UITableView+CellAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CellAnimation.h"; sourceTree = "<group>"; };
+		81592F511EFD176D00754082 /* UITableView+CellAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellAnimation.m"; sourceTree = "<group>"; };
+		81C8C0EF1E6514F600C64227 /* ZBTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C8C0F31E6514F600C64227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81C8C0F51E6514F600C64227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		81C8C0F61E6514F600C64227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		81C8C0F81E6514F600C64227 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		81C8C0F91E6514F600C64227 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81C8C0FC1E6514F600C64227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C8C0FE1E6514F600C64227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C8C1011E6514F600C64227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81C8C1031E6514F600C64227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C8C10A1E65169700C64227 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		81C8C10B1E6519D100C64227 /* ZBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLoadingView.h; sourceTree = "<group>"; };
+		81C8C10C1E6519D100C64227 /* ZBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLoadingView.m; sourceTree = "<group>"; };
+		81C8C10E1E651BE200C64227 /* LoadingAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingAnimation.gif; sourceTree = "<group>"; };
+		81C8C1131E65321200C64227 /* ZBDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBDeviceTool.h; sourceTree = "<group>"; };
+		81C8C1141E65321200C64227 /* ZBDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBDeviceTool.m; sourceTree = "<group>"; };
+		81C8C1161E6555DA00C64227 /* ZBMathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBMathTool.h; sourceTree = "<group>"; };
+		81C8C1171E6555DA00C64227 /* ZBMathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBMathTool.m; sourceTree = "<group>"; };
+		81C8C1191E65620500C64227 /* ZBUITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBUITool.h; sourceTree = "<group>"; };
+		81C8C11A1E65620500C64227 /* ZBUITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBUITool.m; sourceTree = "<group>"; };
+		91A2DC8D7C0E57E6DF218289 /* Pods-ZBTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBTool/Pods-ZBTool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81C8C0EC1E6514F600C64227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA71031A9770F991C270DBD /* libPods-ZBTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		685FF7109A388800269A55B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C789278736E4C07DC976901 /* libPods-ZBTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81C8C0E61E6514F600C64227 = {
+			isa = PBXGroup;
+			children = (
+				81C8C0F11E6514F600C64227 /* ZBTool */,
+				81C8C0F01E6514F600C64227 /* Products */,
+				8599FCAD5C664A8945604725 /* Pods */,
+				685FF7109A388800269A55B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81C8C0F01E6514F600C64227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C8C0EF1E6514F600C64227 /* ZBTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C8C0F11E6514F600C64227 /* ZBTool */ = {
+			isa = PBXGroup;
+			children = (
+				813C35DE1F0C83D700391935 /* ImageTool.h */,
+				813C35DF1F0C83D700391935 /* ImageTool.m */,
+				813C35E01F0C83D700391935 /* UIView+Addition.h */,
+				813C35E11F0C83D700391935 /* UIView+Addition.m */,
+				813C35E21F0C83D700391935 /* ZBTextView.h */,
+				813C35E31F0C83D700391935 /* ZBTextView.m */,
+				81592F501EFD176D00754082 /* UITableView+CellAnimation.h */,
+				81592F511EFD176D00754082 /* UITableView+CellAnimation.m */,
+				81C8C0F81E6514F600C64227 /* ViewController.h */,
+				81C8C0F91E6514F600C64227 /* ViewController.m */,
+				81C8C10B1E6519D100C64227 /* ZBLoadingView.h */,
+				81C8C10C1E6519D100C64227 /* ZBLoadingView.m */,
+				81C8C1131E65321200C64227 /* ZBDeviceTool.h */,
+				81C8C1141E65321200C64227 /* ZBDeviceTool.m */,
+				8108231A1E66B45B00FF3C0F /* ZBRegexTool.h */,
+				8108231B1E66B45B00FF3C0F /* ZBRegexTool.m */,
+				81C8C1161E6555DA00C64227 /* ZBMathTool.h */,
+				81C8C1171E6555DA00C64227 /* ZBMathTool.m */,
+				81C8C1191E65620500C64227 /* ZBUITool.h */,
+				81C8C11A1E65620500C64227 /* ZBUITool.m */,
+				810E42D31E6E4C2C000126EC /* ZBPathTool.h */,
+				810E42D41E6E4C2C000126EC /* ZBPathTool.m */,
+				81592F4D1EFD158D00754082 /* UIButton+touch.h */,
+				81592F4E1EFD158D00754082 /* UIButton+touch.m */,
+				81C8C10E1E651BE200C64227 /* LoadingAnimation.gif */,
+				81C8C0FB1E6514F600C64227 /* Main.storyboard */,
+				81C8C0FE1E6514F600C64227 /* Assets.xcassets */,
+				81C8C1001E6514F600C64227 /* LaunchScreen.storyboard */,
+				81C8C1031E6514F600C64227 /* Info.plist */,
+				81C8C0F21E6514F600C64227 /* Supporting Files */,
+			);
+			path = ZBTool;
+			sourceTree = "<group>";
+		};
+		81C8C0F21E6514F600C64227 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81C8C0F51E6514F600C64227 /* AppDelegate.h */,
+				81C8C0F61E6514F600C64227 /* AppDelegate.m */,
+				81C8C0F31E6514F600C64227 /* main.m */,
+				81C8C10A1E65169700C64227 /* PrefixHeader.pch */,
+				810E42D21E6E49BC000126EC /* PulicDefine.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8599FCAD5C664A8945604725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A2DC8D7C0E57E6DF218289 /* Pods-ZBTool.debug.xcconfig */,
+				035B4086E7BCF6F94865263D /* Pods-ZBTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81C8C0EE1E6514F600C64227 /* ZBTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C8C1061E6514F600C64227 /* Build configuration list for PBXNativeTarget "ZBTool" */;
+			buildPhases = (
+				2E3C798CB608E39A7E5D9767 /* [CP] Check Pods Manifest.lock */,
+				81C8C0EB1E6514F600C64227 /* Sources */,
+				81C8C0EC1E6514F600C64227 /* Frameworks */,
+				81C8C0ED1E6514F600C64227 /* Resources */,
+				C6AEF1B99D5C674512EE5B3C /* [CP] Embed Pods Frameworks */,
+				D60ED53A0D1B24855846C6D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBTool;
+			productName = ZBTool;
+			productReference = 81C8C0EF1E6514F600C64227 /* ZBTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81C8C0E71E6514F600C64227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Zhaobin;
+				TargetAttributes = {
+					81C8C0EE1E6514F600C64227 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 81C8C0EA1E6514F600C64227 /* Build configuration list for PBXProject "ZBTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81C8C0E61E6514F600C64227;
+			productRefGroup = 81C8C0F01E6514F600C64227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81C8C0EE1E6514F600C64227 /* ZBTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81C8C0ED1E6514F600C64227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C8C1021E6514F600C64227 /* LaunchScreen.storyboard in Resources */,
+				81C8C0FF1E6514F600C64227 /* Assets.xcassets in Resources */,
+				81C8C10F1E651BE200C64227 /* LoadingAnimation.gif in Resources */,
+				81C8C0FD1E6514F600C64227 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E3C798CB608E39A7E5D9767 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AEF1B99D5C674512EE5B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBTool/Pods-ZBTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60ED53A0D1B24855846C6D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBTool/Pods-ZBTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81C8C0EB1E6514F600C64227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810E42D51E6E4C2C000126EC /* ZBPathTool.m in Sources */,
+				81592F4F1EFD158D00754082 /* UIButton+touch.m in Sources */,
+				81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */,
+				813C35E51F0C83D700391935 /* UIView+Addition.m in Sources */,
+				81C8C1151E65321200C64227 /* ZBDeviceTool.m in Sources */,
+				81C8C0F71E6514F600C64227 /* AppDelegate.m in Sources */,
+				81C8C1181E6555DA00C64227 /* ZBMathTool.m in Sources */,
+				81592F521EFD176D00754082 /* UITableView+CellAnimation.m in Sources */,
+				813C35E41F0C83D700391935 /* ImageTool.m in Sources */,
+				81C8C0F41E6514F600C64227 /* main.m in Sources */,
+				8108231C1E66B45B00FF3C0F /* ZBRegexTool.m in Sources */,
+				813C35E61F0C83D700391935 /* ZBTextView.m in Sources */,
+				81C8C10D1E6519D100C64227 /* ZBLoadingView.m in Sources */,
+				81C8C11B1E65620500C64227 /* ZBUITool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81C8C0FB1E6514F600C64227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C8C0FC1E6514F600C64227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81C8C1001E6514F600C64227 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C8C1011E6514F600C64227 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81C8C1041E6514F600C64227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		81C8C1051E6514F600C64227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81C8C1071E6514F600C64227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A2DC8D7C0E57E6DF218289 /* Pods-ZBTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZBTool/PrefixHeader.pch";
+				INFOPLIST_FILE = ZBTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmap.ZBTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		81C8C1081E6514F600C64227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035B4086E7BCF6F94865263D /* Pods-ZBTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZBTool/PrefixHeader.pch";
+				INFOPLIST_FILE = ZBTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmap.ZBTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81C8C0EA1E6514F600C64227 /* Build configuration list for PBXProject "ZBTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C8C1041E6514F600C64227 /* Debug */,
+				81C8C1051E6514F600C64227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C8C1061E6514F600C64227 /* Build configuration list for PBXNativeTarget "ZBTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C8C1071E6514F600C64227 /* Debug */,
+				81C8C1081E6514F600C64227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81C8C0E71E6514F600C64227 /* Project object */;
+}
