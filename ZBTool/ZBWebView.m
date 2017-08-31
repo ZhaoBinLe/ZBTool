@@ -130,7 +130,7 @@ static ZBwebToast *m_share = nil;
 
 -(void)config{
     [self configuration].userContentController = [[WKUserContentController alloc] init];
-    [[self configuration].userContentController addScriptMessageHandler:self name:@"CALLBACK_FUNCTION"];
+    [[self configuration].userContentController addScriptMessageHandler:self name:@"js.functionName"];
     NSString *metaStr = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content','width=480,user-scalable=no');document.getElementsByTagName('head')[0].appendChild(meta);";
     WKUserScript *wkUserScript = [[WKUserScript alloc] initWithSource:metaStr injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
     [[self configuration].userContentController addUserScript:wkUserScript];
@@ -227,13 +227,21 @@ static ZBwebToast *m_share = nil;
     
     decisionHandler(WKNavigationActionPolicyAllow);
 }
+-(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
+{
+    if (!navigationAction.targetFrame.isMainFrame) {
+        [webView loadRequest:navigationAction.request];
+    }
+    return nil;
+}
 //重点
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
     NSLog(@"JS 调用了 %@ 方法，传回参数 %@",message.name,message.body);
+    
     NSMutableDictionary *dic=[NSMutableDictionary dictionary];
     [dic setObject:[message.body objectForKey:@"body"] forKey:@"body"];
-    [dic setObject:message.name forKey:@"name"];
+    [dic setObject:message.name forKey:@"js.functionName"];
     if ([_delegate respondsToSelector:@selector(zbWebViewCallBack:)]) {
         [_delegate zbWebViewCallBack:dic];
     }
