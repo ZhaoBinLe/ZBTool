@@ -35,4 +35,15 @@
  @return 时间
  */
 + (NSString *)fixStrToTime:(NSString *)dataStr;
+
+
+
+
+/**
+ 时间格式化
+
+ @param date 时间
+ @return 时间字符串
+ */
++ (NSString *)fixDateToStr:(NSDate*)date;
 @end
