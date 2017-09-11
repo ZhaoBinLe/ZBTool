@@ -16,6 +16,7 @@
 		81592F521EFD176D00754082 /* UITableView+CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81592F511EFD176D00754082 /* UITableView+CellAnimation.m */; };
 		816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */; };
 		8165299A1F5654AC004C0FDF /* ZBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529991F5654AC004C0FDF /* ZBWebView.m */; };
+		81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */; };
 		81C8C0F41E6514F600C64227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F31E6514F600C64227 /* main.m */; };
 		81C8C0F71E6514F600C64227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F61E6514F600C64227 /* AppDelegate.m */; };
 		81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F91E6514F600C64227 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImgTextSpacing.m"; sourceTree = "<group>"; };
 		816529981F5654AC004C0FDF /* ZBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWebView.h; sourceTree = "<group>"; };
 		816529991F5654AC004C0FDF /* ZBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWebView.m; sourceTree = "<group>"; };
+		81B050831F661D5D00CCC946 /* NSArray+SplitAry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SplitAry.h"; sourceTree = "<group>"; };
+		81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SplitAry.m"; sourceTree = "<group>"; };
 		81C8C0EF1E6514F600C64227 /* ZBTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C8C0F31E6514F600C64227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C8C0F51E6514F600C64227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,12 +119,12 @@
 		81C8C0F11E6514F600C64227 /* ZBTool */ = {
 			isa = PBXGroup;
 			children = (
+				81C8C0F81E6514F600C64227 /* ViewController.h */,
+				81C8C0F91E6514F600C64227 /* ViewController.m */,
 				813C35DE1F0C83D700391935 /* ImageTool.h */,
 				813C35DF1F0C83D700391935 /* ImageTool.m */,
 				813C35E21F0C83D700391935 /* ZBTextView.h */,
 				813C35E31F0C83D700391935 /* ZBTextView.m */,
-				81C8C0F81E6514F600C64227 /* ViewController.h */,
-				81C8C0F91E6514F600C64227 /* ViewController.m */,
 				81C8C10B1E6519D100C64227 /* ZBLoadingView.h */,
 				81C8C10C1E6519D100C64227 /* ZBLoadingView.m */,
 				81C8C1131E65321200C64227 /* ZBDeviceTool.h */,
@@ -138,6 +141,8 @@
 				813C35E11F0C83D700391935 /* UIView+Addition.m */,
 				816529981F5654AC004C0FDF /* ZBWebView.h */,
 				816529991F5654AC004C0FDF /* ZBWebView.m */,
+				81B050831F661D5D00CCC946 /* NSArray+SplitAry.h */,
+				81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */,
 				816529951F56549E004C0FDF /* UIButton+ImgTextSpacing.h */,
 				816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */,
 				81592F501EFD176D00754082 /* UITableView+CellAnimation.h */,
@@ -300,6 +305,7 @@
 			files = (
 				810E42D51E6E4C2C000126EC /* ZBPathTool.m in Sources */,
 				81592F4F1EFD158D00754082 /* UIButton+touch.m in Sources */,
+				81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */,
 				816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */,
 				81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */,
 				813C35E51F0C83D700391935 /* UIView+Addition.m in Sources */,

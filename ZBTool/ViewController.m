@@ -10,8 +10,8 @@
 #import "ZBLoadingView.h"
 #import "ZBDeviceTool.h"
 #import "ZBPathTool.h"
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#import "NSArray+SplitAry.h"
+
 @interface ViewController ()
 @property (nonatomic,strong) ZBLoadingView *zbloadView;
 @end
@@ -27,6 +27,10 @@
     
     [ZBDeviceTool shareSingleton];
     NSLog(@"%@",[ZBDeviceTool getCurrentDeviceModel]);
+    
+    NSArray *ary = @[@"1",@"2",@"3",@"4",@"5",@"6",@"8",@"9",@"10",@"11",@"12"];
+    NSArray *new =  [ary createSubAryWithsplitArraywithSubSize:2];
+    NSLog(@"count:%ld",new.count);
     
 }
 - (void)dismissView:(NSNotification*)info{
