@@ -32,6 +32,8 @@
     NSArray *new =  [ary createSubAryWithsplitArraywithSubSize:2];
     NSLog(@"count:%ld",new.count);
     
+    NSString* phoneModel = [[UIDevice currentDevice] model];
+    NSLog(@"型号: %@",phoneModel );
 }
 - (void)dismissView:(NSNotification*)info{
     NSLog(@"%@",[info.userInfo allValues]);

@@ -20,4 +20,13 @@
 //在指定的视图内进行截屏操作,返回截屏后的图片
 -(UIImage *)imageWithScreenContentsInView:(UIView *)view;
 
+
+/**
+ 获取Gif图片时长
+
+ @param data 图片二进制数据
+ @return 返回时长
+ */
+- (double)durationForGifData:(NSData *)data;
+
 @end

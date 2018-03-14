@@ -63,5 +63,66 @@ static ImageTool *_shareImageTool =nil;
     UIGraphicsEndImageContext();
     return scaled;
 }
-
+- (double)durationForGifData:(NSData *)data{
+    //将GIF图片转换成对应的图片源
+    CGImageSourceRef gifSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
+    //获取其中图片源个数，即由多少帧图片组成
+    size_t frameCout = CGImageSourceGetCount(gifSource);
+    //定义数组存储拆分出来的图片
+    NSMutableArray* frames = [[NSMutableArray alloc] init];
+    NSTimeInterval totalDuration = 0;
+    for (size_t i=0; i<frameCout; i++) {
+        //从GIF图片中取出源图片
+        CGImageRef imageRef = CGImageSourceCreateImageAtIndex(gifSource, i, NULL);
+        //将图片源转换成UIimageView能使用的图片源
+        UIImage* imageName = [UIImage imageWithCGImage:imageRef];
+        //将图片加入数组中
+        [frames addObject:imageName];
+        double duration = [self gifImageDeleyTime:gifSource index:i];
+        totalDuration += duration;
+        CGImageRelease(imageRef);
+    }
+    
+    //获取循环次数
+    NSInteger loopCount;//循环次数
+    CFDictionaryRef properties = CGImageSourceCopyProperties(gifSource, NULL);
+    if (properties) {
+        CFDictionaryRef gif = CFDictionaryGetValue(properties, kCGImagePropertyGIFDictionary);
+        if (gif) {
+            CFTypeRef loop = CFDictionaryGetValue(gif, kCGImagePropertyGIFLoopCount);
+            if (loop) {
+                //如果loop == NULL，表示不循环播放，当loopCount  == 0时，表示无限循环；
+                CFNumberGetValue(loop, kCFNumberNSIntegerType, &loopCount);
+            };
+        }
+    }
+    
+    CFRelease(gifSource);
+    return totalDuration;
+}
+- (double)gifImageDeleyTime:(CGImageSourceRef)imageSource index:(NSInteger)index {
+    float frameDuration = 0.1f;
+    CFDictionaryRef cfFrameProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, index, nil);
+    NSDictionary *frameProperties = (__bridge NSDictionary *)cfFrameProperties;
+    NSDictionary *gifProperties = frameProperties[(NSString *)kCGImagePropertyGIFDictionary];
+    
+    NSNumber *delayTimeUnclampedProp = gifProperties[(NSString *)kCGImagePropertyGIFUnclampedDelayTime];
+    if (delayTimeUnclampedProp) {
+        frameDuration = [delayTimeUnclampedProp floatValue];
+    } else {
+        NSNumber *delayTimeProp = gifProperties[(NSString *)kCGImagePropertyGIFDelayTime];
+        if (delayTimeProp) {
+            frameDuration = [delayTimeProp floatValue];
+        }
+    }
+    
+    
+    if (frameDuration < 0.011f) {
+        frameDuration = 0.100f;
+    }
+    
+    CFRelease(cfFrameProperties);
+    return frameDuration;
+    
+}
 @end
