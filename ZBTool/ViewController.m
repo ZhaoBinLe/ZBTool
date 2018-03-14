@@ -11,7 +11,8 @@
 #import "ZBDeviceTool.h"
 #import "ZBPathTool.h"
 #import "NSArray+SplitAry.h"
-
+#import "ImageTool.h"
+#import <WebKit/WebKit.h>
 @interface ViewController ()
 @property (nonatomic,strong) ZBLoadingView *zbloadView;
 @end
@@ -34,11 +35,25 @@
     
     NSString* phoneModel = [[UIDevice currentDevice] model];
     NSLog(@"型号: %@",phoneModel );
+    
+    [self imageFunction];
+ 
 }
 - (void)dismissView:(NSNotification*)info{
     NSLog(@"%@",[info.userInfo allValues]);
     [_zbloadView dismissLoadingView];
     _zbloadView = nil;
+}
+- (void)imageFunction {
+    ImageTool *tool = [ImageTool shareTool];
+    NSString *hdPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"gif"];
+    NSData *data= [NSData dataWithContentsOfFile:hdPath];
+    double time = [tool durationForGifData:data];
+    FLAnimatedImageView  *gifimage = [[FLAnimatedImageView alloc] initWithFrame:CGRectMake(0, 20, 100, 100)];
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:data];
+    gifimage.animatedImage = image;
+    [self.view addSubview:gifimage];
+    NSLog(@"GIF:%lf",time);
 }
 - (ZBLoadingView *)zbloadView {
     if (!_zbloadView) {
