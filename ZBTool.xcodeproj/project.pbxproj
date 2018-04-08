@@ -16,6 +16,8 @@
 		81592F521EFD176D00754082 /* UITableView+CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81592F511EFD176D00754082 /* UITableView+CellAnimation.m */; };
 		816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */; };
 		8165299A1F5654AC004C0FDF /* ZBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529991F5654AC004C0FDF /* ZBWebView.m */; };
+		8194D1C02079DAFD009BF344 /* PhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194D1BE2079DAFC009BF344 /* PhotosManager.m */; };
+		8194D1C22079DB18009BF344 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D1C12079DB18009BF344 /* Photos.framework */; };
 		81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */; };
 		81C8C0F41E6514F600C64227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F31E6514F600C64227 /* main.m */; };
 		81C8C0F71E6514F600C64227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C0F61E6514F600C64227 /* AppDelegate.m */; };
@@ -53,6 +55,9 @@
 		816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImgTextSpacing.m"; sourceTree = "<group>"; };
 		816529981F5654AC004C0FDF /* ZBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWebView.h; sourceTree = "<group>"; };
 		816529991F5654AC004C0FDF /* ZBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWebView.m; sourceTree = "<group>"; };
+		8194D1BE2079DAFC009BF344 /* PhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosManager.m; sourceTree = "<group>"; };
+		8194D1BF2079DAFD009BF344 /* PhotosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosManager.h; sourceTree = "<group>"; };
+		8194D1C12079DB18009BF344 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		81B050831F661D5D00CCC946 /* NSArray+SplitAry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SplitAry.h"; sourceTree = "<group>"; };
 		81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SplitAry.m"; sourceTree = "<group>"; };
 		81C8C0EF1E6514F600C64227 /* ZBTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8194D1C22079DB18009BF344 /* Photos.framework in Frameworks */,
 				EAA71031A9770F991C270DBD /* libPods-ZBTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +99,7 @@
 		685FF7109A388800269A55B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8194D1C12079DB18009BF344 /* Photos.framework */,
 				6C789278736E4C07DC976901 /* libPods-ZBTool.a */,
 			);
 			name = Frameworks;
@@ -123,6 +130,8 @@
 				81C8C0F91E6514F600C64227 /* ViewController.m */,
 				813C35DE1F0C83D700391935 /* ImageTool.h */,
 				813C35DF1F0C83D700391935 /* ImageTool.m */,
+				8194D1BF2079DAFD009BF344 /* PhotosManager.h */,
+				8194D1BE2079DAFC009BF344 /* PhotosManager.m */,
 				813C35E21F0C83D700391935 /* ZBTextView.h */,
 				813C35E31F0C83D700391935 /* ZBTextView.m */,
 				81C8C10B1E6519D100C64227 /* ZBLoadingView.h */,
@@ -315,6 +324,7 @@
 				81592F521EFD176D00754082 /* UITableView+CellAnimation.m in Sources */,
 				813C35E41F0C83D700391935 /* ImageTool.m in Sources */,
 				81C8C0F41E6514F600C64227 /* main.m in Sources */,
+				8194D1C02079DAFD009BF344 /* PhotosManager.m in Sources */,
 				8165299A1F5654AC004C0FDF /* ZBWebView.m in Sources */,
 				8108231C1E66B45B00FF3C0F /* ZBRegexTool.m in Sources */,
 				813C35E61F0C83D700391935 /* ZBTextView.m in Sources */,
