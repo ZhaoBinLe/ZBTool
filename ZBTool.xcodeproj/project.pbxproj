@@ -17,6 +17,7 @@
 		81607A17209466210000D117 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 81607A16209466200000D117 /* Foundation+Log.m */; };
 		816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */; };
 		8165299A1F5654AC004C0FDF /* ZBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529991F5654AC004C0FDF /* ZBWebView.m */; };
+		81811A85209C5496008A9007 /* ZBNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81811A84209C5496008A9007 /* ZBNetworkTool.m */; };
 		8194D1C02079DAFD009BF344 /* PhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194D1BE2079DAFC009BF344 /* PhotosManager.m */; };
 		8194D1C22079DB18009BF344 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D1C12079DB18009BF344 /* Photos.framework */; };
 		81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B050841F661D5D00CCC946 /* NSArray+SplitAry.m */; };
@@ -57,6 +58,8 @@
 		816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImgTextSpacing.m"; sourceTree = "<group>"; };
 		816529981F5654AC004C0FDF /* ZBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWebView.h; sourceTree = "<group>"; };
 		816529991F5654AC004C0FDF /* ZBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWebView.m; sourceTree = "<group>"; };
+		81811A83209C5496008A9007 /* ZBNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBNetworkTool.h; sourceTree = "<group>"; };
+		81811A84209C5496008A9007 /* ZBNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBNetworkTool.m; sourceTree = "<group>"; };
 		8194D1BE2079DAFC009BF344 /* PhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosManager.m; sourceTree = "<group>"; };
 		8194D1BF2079DAFD009BF344 /* PhotosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosManager.h; sourceTree = "<group>"; };
 		8194D1C12079DB18009BF344 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -161,6 +164,8 @@
 				81592F511EFD176D00754082 /* UITableView+CellAnimation.m */,
 				81592F4D1EFD158D00754082 /* UIButton+touch.h */,
 				81592F4E1EFD158D00754082 /* UIButton+touch.m */,
+				81811A83209C5496008A9007 /* ZBNetworkTool.h */,
+				81811A84209C5496008A9007 /* ZBNetworkTool.m */,
 				81C8C10E1E651BE200C64227 /* LoadingAnimation.gif */,
 				81C8C0FB1E6514F600C64227 /* Main.storyboard */,
 				81C8C0FE1E6514F600C64227 /* Assets.xcassets */,
@@ -321,6 +326,7 @@
 				81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */,
 				816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */,
 				81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */,
+				81811A85209C5496008A9007 /* ZBNetworkTool.m in Sources */,
 				813C35E51F0C83D700391935 /* UIView+Addition.m in Sources */,
 				81C8C1151E65321200C64227 /* ZBDeviceTool.m in Sources */,
 				81C8C0F71E6514F600C64227 /* AppDelegate.m in Sources */,

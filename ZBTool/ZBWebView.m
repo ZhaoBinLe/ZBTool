@@ -289,6 +289,7 @@ static ZBwebToast *m_share = nil;
         [self addSubview:progressView];
         self.progressView = progressView;
     }
+    
     return _progressView;
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
