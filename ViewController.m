@@ -12,6 +12,7 @@
 #import "ZBPathTool.h"
 #import "NSArray+SplitAry.h"
 #import "ImageTool.h"
+#import "ZBMathTool.h"
 #import <WebKit/WebKit.h>
 @interface ViewController ()
 @property (nonatomic,strong) ZBLoadingView *zbloadView;
@@ -36,8 +37,10 @@
     NSString* phoneModel = [[UIDevice currentDevice] model];
     NSLog(@"型号: %@",phoneModel );
     
-    [self imageFunction];
+//    [self imageFunction];
  
+    NSString *chinese = [ZBMathTool convertAmount:@"121231231356324.78"];
+    NSLog(@"%@",chinese);
 }
 - (void)dismissView:(NSNotification*)info{
     NSLog(@"%@",[info.userInfo allValues]);

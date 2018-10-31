@@ -46,4 +46,13 @@
  @return 时间字符串
  */
 + (NSString *)fixDateToStr:(NSDate*)date;
+
+
+/**
+ 阿拉伯数字转汉字（金额）
+
+ @param amountString 金额数字
+ @return 金额大写汉字
+ */
++ (NSString *)convertAmount:(NSString *)amountString;
 @end
