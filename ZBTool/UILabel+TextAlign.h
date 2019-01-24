@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UILabel (TextAlign)
-@property (nonatomic, assign) BOOL isTop;
-@property (nonatomic, assign) BOOL isBottom;
+- (void)setIsTop:(BOOL)isTop;
+- (void)setIsBottom:(BOOL)isBottom;
 @end
 
 NS_ASSUME_NONNULL_END

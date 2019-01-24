@@ -56,7 +56,7 @@
 }
 
 /*
- 例如 100 转化为 一百元整
+ 例如 100 转化为 壹百元整
  */
 + (NSString *)convertAmount:(NSString *)amountString
 {
