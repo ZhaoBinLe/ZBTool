@@ -33,4 +33,17 @@
  @return 相片组
  */
 - (NSArray *)searchAllImagesInCollection:(PHAssetCollection *)collection;
+/**
+ 校检相机权限
+ 
+ @param permissionGranted 状态
+ */
++ (void)zb_checkCameraAuthorizationStatusWithGrand:(void(^)(BOOL granted))permissionGranted;
+
+/**
+ 校检相册权限
+ 
+ @param permissionGranted 状态
+ */
++ (void)zb_checkAlbumAuthorizationStatusWithGrand:(void(^)(BOOL granted))permissionGranted;
 @end
