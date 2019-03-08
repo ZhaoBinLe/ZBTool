@@ -18,6 +18,7 @@
 		816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529961F56549E004C0FDF /* UIButton+ImgTextSpacing.m */; };
 		8165299A1F5654AC004C0FDF /* ZBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816529991F5654AC004C0FDF /* ZBWebView.m */; };
 		81811A85209C5496008A9007 /* ZBNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81811A84209C5496008A9007 /* ZBNetworkTool.m */; };
+		8189B1F42232717D00E681D8 /* CoordsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8189B1F32232717D00E681D8 /* CoordsTool.m */; };
 		8190F30321F95FF500C4DCD8 /* UILabel+TextAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = 8190F30121F95FF500C4DCD8 /* UILabel+TextAlign.m */; };
 		8194D1C02079DAFD009BF344 /* PhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194D1BE2079DAFC009BF344 /* PhotosManager.m */; };
 		8194D1C22079DB18009BF344 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D1C12079DB18009BF344 /* Photos.framework */; };
@@ -61,6 +62,8 @@
 		816529991F5654AC004C0FDF /* ZBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWebView.m; sourceTree = "<group>"; };
 		81811A83209C5496008A9007 /* ZBNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBNetworkTool.h; sourceTree = "<group>"; };
 		81811A84209C5496008A9007 /* ZBNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBNetworkTool.m; sourceTree = "<group>"; };
+		8189B1F22232717D00E681D8 /* CoordsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordsTool.h; sourceTree = "<group>"; };
+		8189B1F32232717D00E681D8 /* CoordsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordsTool.m; sourceTree = "<group>"; };
 		8190F30121F95FF500C4DCD8 /* UILabel+TextAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlign.m"; sourceTree = "<group>"; };
 		8190F30221F95FF500C4DCD8 /* UILabel+TextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlign.h"; sourceTree = "<group>"; };
 		8194D1BE2079DAFC009BF344 /* PhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosManager.m; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				81607A16209466200000D117 /* Foundation+Log.m */,
 				813C35DE1F0C83D700391935 /* ImageTool.h */,
 				813C35DF1F0C83D700391935 /* ImageTool.m */,
+				8189B1F22232717D00E681D8 /* CoordsTool.h */,
+				8189B1F32232717D00E681D8 /* CoordsTool.m */,
 				8194D1BF2079DAFD009BF344 /* PhotosManager.h */,
 				8194D1BE2079DAFC009BF344 /* PhotosManager.m */,
 				813C35E21F0C83D700391935 /* ZBTextView.h */,
@@ -331,6 +336,7 @@
 				81592F4F1EFD158D00754082 /* UIButton+touch.m in Sources */,
 				81B050851F661D5D00CCC946 /* NSArray+SplitAry.m in Sources */,
 				816529971F56549E004C0FDF /* UIButton+ImgTextSpacing.m in Sources */,
+				8189B1F42232717D00E681D8 /* CoordsTool.m in Sources */,
 				81C8C0FA1E6514F600C64227 /* ViewController.m in Sources */,
 				81811A85209C5496008A9007 /* ZBNetworkTool.m in Sources */,
 				813C35E51F0C83D700391935 /* UIView+Addition.m in Sources */,
