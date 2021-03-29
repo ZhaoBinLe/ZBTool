@@ -52,5 +52,19 @@
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
 }
++ (CGFloat)heightWithWidth:(CGFloat)width font:(CGFloat)font str:(NSString *)string {
+    UIFont *fonts = [UIFont systemFontOfSize:font];
+    CGSize size = CGSizeMake(width, MAXFLOAT);
+    NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys:fonts,NSFontAttributeName ,nil];
+    size =[string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
+    return size.height;
 
+}
++ (CGFloat)widthWithheight:(CGFloat)height font:(CGFloat)font str:(NSString *)string {
+    UIFont *fonts = [UIFont systemFontOfSize:font];
+    CGSize size = CGSizeMake(MAXFLOAT, height);
+    NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys:fonts,NSFontAttributeName ,nil];
+    size =[string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
+    return size.width;
+}
 @end
